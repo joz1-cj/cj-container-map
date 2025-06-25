@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_60ec38a6e9af705a998ae3bcc9017361 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_60ec38a6e9af705a998ae3bcc9017361" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_60ec38a6e9af705a998ae3bcc9017361 = L.map(
+                "map_60ec38a6e9af705a998ae3bcc9017361",
+                {
+                    center: [36.53491776053072, -95.50734160366903],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b8a54135b3e13ecce8588915595e404d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_60ec38a6e9af705a998ae3bcc9017361);
+        
+    
+            var marker_cluster_e76fddbaa5299331771b7518943c4a6b = L.markerClusterGroup(
+                {}
+            );
+            map_60ec38a6e9af705a998ae3bcc9017361.addLayer(marker_cluster_e76fddbaa5299331771b7518943c4a6b);
+        
+    
+            var circle_marker_1a3599a1b2b4ea5c18ba92c55fb383e5 = L.circleMarker(
+                [32.969221, -97.353743],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e76fddbaa5299331771b7518943c4a6b);
+        
+    
+        var popup_4dd9a9f0d1f2bd35b287687fc9444d21 = L.popup({"maxWidth": 300});
+
+        
+            var html_9339980c911e0cf249fe9fb90afe9d70 = $(`<div id="html_9339980c911e0cf249fe9fb90afe9d70" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 12248 US Highway 287, Haslet, TX 76052<br><b>Available:</b> 0<br><b>Stacked:</b> 202</div>`)[0];
+            popup_4dd9a9f0d1f2bd35b287687fc9444d21.setContent(html_9339980c911e0cf249fe9fb90afe9d70);
+        
+
+        circle_marker_1a3599a1b2b4ea5c18ba92c55fb383e5.bindPopup(popup_4dd9a9f0d1f2bd35b287687fc9444d21)
+        ;
+
+        
+    
+    
+            var circle_marker_39c017c5650b60ea9fcbde0da153a599 = L.circleMarker(
+                [41.6632620843943, -88.0329192408128],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e76fddbaa5299331771b7518943c4a6b);
+        
+    
+        var popup_7dbb70fe4cc6091e9c792f0832460119 = L.popup({"maxWidth": 300});
+
+        
+            var html_5b330e9b5c0471ee7b72d77e7135d715 = $(`<div id="html_5b330e9b5c0471ee7b72d77e7135d715" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 12300 New Ave., Lemont, IL <br><b>Available:</b> 0<br><b>Stacked:</b> 204</div>`)[0];
+            popup_7dbb70fe4cc6091e9c792f0832460119.setContent(html_5b330e9b5c0471ee7b72d77e7135d715);
+        
+
+        circle_marker_39c017c5650b60ea9fcbde0da153a599.bindPopup(popup_7dbb70fe4cc6091e9c792f0832460119)
+        ;
+
+        
+    
+    
+            var circle_marker_b35400019557199b39c44ef886da0ccb = L.circleMarker(
+                [32.8818699368567, -97.3698033333038],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e76fddbaa5299331771b7518943c4a6b);
+        
+    
+        var popup_de65fbede97db5b6052c0013d6297c47 = L.popup({"maxWidth": 300});
+
+        
+            var html_6a8bdc46c3f307b9bb799b02ffe8af6e = $(`<div id="html_6a8bdc46c3f307b9bb799b02ffe8af6e" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 1353 Jarvis Rd., Saginaw, TX 76179<br><b>Available:</b> 10<br><b>Stacked:</b> 0</div>`)[0];
+            popup_de65fbede97db5b6052c0013d6297c47.setContent(html_6a8bdc46c3f307b9bb799b02ffe8af6e);
+        
+
+        circle_marker_b35400019557199b39c44ef886da0ccb.bindPopup(popup_de65fbede97db5b6052c0013d6297c47)
+        ;
+
+        
+    
+    
+            var circle_marker_ff8619ef587c733d40b96801d0d9c762 = L.circleMarker(
+                [34.0947025633764, -117.50805534275],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e76fddbaa5299331771b7518943c4a6b);
+        
+    
+        var popup_972a563bd2002c9f862be6fd6df3cd30 = L.popup({"maxWidth": 300});
+
+        
+            var html_8d00128aefbac60bd62df7addc0b39f9 = $(`<div id="html_8d00128aefbac60bd62df7addc0b39f9" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 13616 Whittram Ave., Fontana, CA 92335<br><b>Available:</b> 0<br><b>Stacked:</b> 53</div>`)[0];
+            popup_972a563bd2002c9f862be6fd6df3cd30.setContent(html_8d00128aefbac60bd62df7addc0b39f9);
+        
+
+        circle_marker_ff8619ef587c733d40b96801d0d9c762.bindPopup(popup_972a563bd2002c9f862be6fd6df3cd30)
+        ;
+
+        
+    
+    
+            var circle_marker_4a0938318bbb5be10d29ad3306489eef = L.circleMarker(
+                [32.9533811935483, -97.3961294838709],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e76fddbaa5299331771b7518943c4a6b);
+        
+    
+        var popup_f3b183a62268f2c89ad7e18a19a163d8 = L.popup({"maxWidth": 300});
+
+        
+            var html_2c5f9dc35b38c713b68ddb141b03c6a7 = $(`<div id="html_2c5f9dc35b38c713b68ddb141b03c6a7" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 19560 FM, 156 South, Haslet, TX 76052<br><b>Available:</b> 0<br><b>Stacked:</b> 4</div>`)[0];
+            popup_f3b183a62268f2c89ad7e18a19a163d8.setContent(html_2c5f9dc35b38c713b68ddb141b03c6a7);
+        
+
+        circle_marker_4a0938318bbb5be10d29ad3306489eef.bindPopup(popup_f3b183a62268f2c89ad7e18a19a163d8)
+        ;
+
+        
+    
+    
+            var circle_marker_13a83168eb3a954f73cc88c60b24e2c5 = L.circleMarker(
+                [41.307347, -88.145996],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e76fddbaa5299331771b7518943c4a6b);
+        
+    
+        var popup_a62988ab5ea2c85a92df0e01e62d1e15 = L.popup({"maxWidth": 300});
+
+        
+            var html_02f01a60e370bcd2e31b6c56511a7780 = $(`<div id="html_02f01a60e370bcd2e31b6c56511a7780" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 20012 W. South Arssenal Rd., Wilmington, IL 60481<br><b>Available:</b> 1<br><b>Stacked:</b> 0</div>`)[0];
+            popup_a62988ab5ea2c85a92df0e01e62d1e15.setContent(html_02f01a60e370bcd2e31b6c56511a7780);
+        
+
+        circle_marker_13a83168eb3a954f73cc88c60b24e2c5.bindPopup(popup_a62988ab5ea2c85a92df0e01e62d1e15)
+        ;
+
+        
+    
+    
+            var circle_marker_d74bcad9194de57bac78050855e6c504 = L.circleMarker(
+                [37.832793, -121.255961],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e76fddbaa5299331771b7518943c4a6b);
+        
+    
+        var popup_3779ce6ffcaffb1dc59ae362b7391aad = L.popup({"maxWidth": 300});
+
+        
+            var html_a3cc7354de9cac7d9c3309e3c477be52 = $(`<div id="html_a3cc7354de9cac7d9c3309e3c477be52" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 2487 N Airport Way, Manteca, CA 95336<br><b>Available:</b> 0<br><b>Stacked:</b> 8</div>`)[0];
+            popup_3779ce6ffcaffb1dc59ae362b7391aad.setContent(html_a3cc7354de9cac7d9c3309e3c477be52);
+        
+
+        circle_marker_d74bcad9194de57bac78050855e6c504.bindPopup(popup_3779ce6ffcaffb1dc59ae362b7391aad)
+        ;
+
+        
+    
+    
+            var circle_marker_b9137fd8ed9ec19bee9bb1bb719ecf15 = L.circleMarker(
+                [34.0244638571428, -118.220480897959],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e76fddbaa5299331771b7518943c4a6b);
+        
+    
+        var popup_1afee1ab6f217bac8a3e8258696fec32 = L.popup({"maxWidth": 300});
+
+        
+            var html_2c2d8037d91acc694edb94ac1ff84879 = $(`<div id="html_2c2d8037d91acc694edb94ac1ff84879" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 2650 East Olympic Blvd., Los Angeles, CA 90023<br><b>Available:</b> 3<br><b>Stacked:</b> 0</div>`)[0];
+            popup_1afee1ab6f217bac8a3e8258696fec32.setContent(html_2c2d8037d91acc694edb94ac1ff84879);
+        
+
+        circle_marker_b9137fd8ed9ec19bee9bb1bb719ecf15.bindPopup(popup_1afee1ab6f217bac8a3e8258696fec32)
+        ;
+
+        
+    
+    
+            var circle_marker_ce0a374d8f6f4a0781b10e29bd19a79b = L.circleMarker(
+                [35.008464787143, -89.9189324991405],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e76fddbaa5299331771b7518943c4a6b);
+        
+    
+        var popup_37a13d76efa81892bd75f6ec88bf7415 = L.popup({"maxWidth": 300});
+
+        
+            var html_5d2133fc3c3f057aabf5d4039d9b4b65 = $(`<div id="html_5d2133fc3c3f057aabf5d4039d9b4b65" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 5126 Malone Rd., Memphis, TN 38118<br><b>Available:</b> 9<br><b>Stacked:</b> 0</div>`)[0];
+            popup_37a13d76efa81892bd75f6ec88bf7415.setContent(html_5d2133fc3c3f057aabf5d4039d9b4b65);
+        
+
+        circle_marker_ce0a374d8f6f4a0781b10e29bd19a79b.bindPopup(popup_37a13d76efa81892bd75f6ec88bf7415)
+        ;
+
+        
+    
+    
+            var circle_marker_d9d1ce621a340c866907dbfff46e5c1d = L.circleMarker(
+                [35.0062137631903, -89.8750260297873],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e76fddbaa5299331771b7518943c4a6b);
+        
+    
+        var popup_4563c43b6a9834800af405fc477bb78f = L.popup({"maxWidth": 300});
+
+        
+            var html_b13a02b54080df1b9bc72c16761700f3 = $(`<div id="html_b13a02b54080df1b9bc72c16761700f3" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 5707 East Holmes Rd., Memphis, TN 38141<br><b>Available:</b> 0<br><b>Stacked:</b> 73</div>`)[0];
+            popup_4563c43b6a9834800af405fc477bb78f.setContent(html_b13a02b54080df1b9bc72c16761700f3);
+        
+
+        circle_marker_d9d1ce621a340c866907dbfff46e5c1d.bindPopup(popup_4563c43b6a9834800af405fc477bb78f)
+        ;
+
+        
+    
+    
+            var circle_marker_853e8a46030c574cac76a3796c840755 = L.circleMarker(
+                [41.799828, -87.777932],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e76fddbaa5299331771b7518943c4a6b);
+        
+    
+        var popup_9445e2af334279c291c4ac7206248a7a = L.popup({"maxWidth": 300});
+
+        
+            var html_1d45d4164d5cdf3d64d1f12ffb4aa845 = $(`<div id="html_1d45d4164d5cdf3d64d1f12ffb4aa845" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 6200 W. 51st st., Chicago IL 60638<br><b>Available:</b> 1<br><b>Stacked:</b> 0</div>`)[0];
+            popup_9445e2af334279c291c4ac7206248a7a.setContent(html_1d45d4164d5cdf3d64d1f12ffb4aa845);
+        
+
+        circle_marker_853e8a46030c574cac76a3796c840755.bindPopup(popup_9445e2af334279c291c4ac7206248a7a)
+        ;
+
+        
+    
+    
+            var circle_marker_7428942d29785612940ab490f62cbc98 = L.circleMarker(
+                [33.20702, -111.7082],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e76fddbaa5299331771b7518943c4a6b);
+        
+    
+        var popup_dbcff91d637b4155f03623f025f3c934 = L.popup({"maxWidth": 300});
+
+        
+            var html_3f84d609c024df8113ed262a40f782ae = $(`<div id="html_3f84d609c024df8113ed262a40f782ae" style="width: 100.0%; height: 100.0%;"><b>Location:</b> QUEEN CREEK, AZ<br><b>Available:</b> 10<br><b>Stacked:</b> 0</div>`)[0];
+            popup_dbcff91d637b4155f03623f025f3c934.setContent(html_3f84d609c024df8113ed262a40f782ae);
+        
+
+        circle_marker_7428942d29785612940ab490f62cbc98.bindPopup(popup_dbcff91d637b4155f03623f025f3c934)
+        ;
+
+        
+    
+    
+            var marker_5d9145c0734e2c73f62a498759d2edd9 = L.marker(
+                [23.6345, -102.5528],
+                {}
+            ).addTo(map_60ec38a6e9af705a998ae3bcc9017361);
+        
+    
+            var icon_9924b129b48be9a762aee764d6c3af06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5d9145c0734e2c73f62a498759d2edd9.setIcon(icon_9924b129b48be9a762aee764d6c3af06);
+        
+    
+        var popup_4c5e9b5b53e2c0c9fc21542ab02e51d9 = L.popup({"maxWidth": 300});
+
+        
+            var html_0dcc659c67492189f1413c383e2bedc4 = $(`<div id="html_0dcc659c67492189f1413c383e2bedc4" style="width: 100.0%; height: 100.0%;"><b>Location:</b> Mexico<br><b>Available:</b> 0<br><b>Stacked:</b> 60</div>`)[0];
+            popup_4c5e9b5b53e2c0c9fc21542ab02e51d9.setContent(html_0dcc659c67492189f1413c383e2bedc4);
+        
+
+        marker_5d9145c0734e2c73f62a498759d2edd9.bindPopup(popup_4c5e9b5b53e2c0c9fc21542ab02e51d9)
+        ;
+
+        
+    
+</script>
+</html>
